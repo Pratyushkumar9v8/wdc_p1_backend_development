@@ -28,7 +28,6 @@ export const login = async (req: Request, res: Response) => {
                 maxAge: 7*24*60*60*1000
             });
             
-            // Return user data without password
             const { password: _, ...userWithoutPassword } = user;
             return res.status(httpStatus.OK).json({ 
                 message: "Login Successful",
@@ -130,7 +129,6 @@ export const getProfile = async (req: Request, res: Response) => {
             return res.status(httpStatus.NOT_FOUND).json({ message: "User not found" });
         }
 
-        // Return user data without password
         const { password, ...userWithoutPassword } = user;
         return res.status(httpStatus.OK).json({ user: userWithoutPassword });
     } catch (e) {

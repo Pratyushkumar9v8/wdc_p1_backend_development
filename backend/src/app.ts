@@ -1,9 +1,9 @@
 import express from 'express';
-import pool from './config/db';
+import pool from './config/db.js';
 import cors from 'cors';
 import dotenv from 'dotenv';
 import rateLimit from "express-rate-limit";
-import userRoutes from './routes/user.route';
+import userRoutes from './routes/user.route.js';
 import cookieParser from 'cookie-parser';
 dotenv.config()
 

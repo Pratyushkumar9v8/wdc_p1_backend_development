@@ -1,4 +1,4 @@
-import pool from '../config/db'
+import pool from '../config/db.js'
 import type { RowDataPacket, ResultSetHeader } from 'mysql2'; //rowdatapackets ->select , ResultsetHeader -> Insert //rowdatapackets ->select , ResultsetHeader -> Insert
 
 export const findUserByEmail = async (email:string)=>{

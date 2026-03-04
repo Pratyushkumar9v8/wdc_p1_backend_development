@@ -1,4 +1,4 @@
-import {createUser, findUserByEmail, deleteUserById, updateUserById, findUserById} from '../repositories/user.repository'
+import {createUser, findUserByEmail, deleteUserById, updateUserById, findUserById} from '../repositories/user.repository.js'
 import httpStatus from "http-status";
 import bcrypt from "bcrypt";
 import type { Request, Response } from "express";

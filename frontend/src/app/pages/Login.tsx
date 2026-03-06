@@ -58,21 +58,21 @@ export function Login() {
     }
   };
 
-  const handleGoogleLogin = () => {
-    // Google OAuth logic will go here
-    console.log("Google login attempt");
+  // const handleGoogleLogin = () => {
+  //   // Google OAuth logic will go here
+  //   console.log("Google login attempt");
     
-    // Simulate Google login success
-    localStorage.setItem("isAuthenticated", "true");
-    const profile = {
-      name: "John Doe",
-      email: "john.doe@gmail.com",
-      bio: "Software developer passionate about creating amazing web experiences.",
-      phone: "+1 (555) 123-4567"
-    };
-    localStorage.setItem("userProfile", JSON.stringify(profile));
-    navigate("/profile");
-  };
+  //   // Simulate Google login success
+  //   localStorage.setItem("isAuthenticated", "true");
+  //   const profile = {
+  //     name: "John Doe",
+  //     email: "john.doe@gmail.com",
+  //     bio: "Software developer passionate about creating amazing web experiences.",
+  //     phone: "+1 (555) 123-4567"
+  //   };
+  //   localStorage.setItem("userProfile", JSON.stringify(profile));
+  //   navigate("/profile");
+  // };
 
   return (
     <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-50 to-indigo-100 p-4">
@@ -135,9 +135,9 @@ export function Login() {
             <div className="space-y-2">
               <div className="flex items-center justify-between">
                 <Label htmlFor="password">Password</Label>
-                <a href="#" className="text-sm text-blue-600 hover:underline">
+                {/* <a href="#" className="text-sm text-blue-600 hover:underline">
                   Forgot password?
-                </a>
+                </a> */}
               </div>
               <div className="relative">
                 <Input
